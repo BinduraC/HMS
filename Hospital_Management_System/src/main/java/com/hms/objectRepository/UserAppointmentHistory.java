@@ -10,7 +10,6 @@ import org.openqa.selenium.support.PageFactory;
  * @author INDRAJIT
  *
  */
-
 public class UserAppointmentHistory {
 
 	//initialization
