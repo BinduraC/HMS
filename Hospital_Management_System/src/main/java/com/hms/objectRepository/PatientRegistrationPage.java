@@ -9,7 +9,6 @@ import org.openqa.selenium.support.PageFactory;
  * @author INDRAJIT
  *
  */
-
 public class PatientRegistrationPage {
 	//initialization
 	public PatientRegistrationPage(WebDriver driver)

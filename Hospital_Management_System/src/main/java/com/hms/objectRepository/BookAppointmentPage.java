@@ -11,7 +11,6 @@ import com.hms.genericUtilities.WebDriverUtility;
  * @author INDRAJIT
  *
  */
-
 public class BookAppointmentPage extends WebDriverUtility {
 
 	//initialization
