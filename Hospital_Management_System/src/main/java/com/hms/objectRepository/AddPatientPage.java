@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 /**
  * 
- * @author dinuh
+ * @author hemanth
  *
  */
 public class AddPatientPage 
