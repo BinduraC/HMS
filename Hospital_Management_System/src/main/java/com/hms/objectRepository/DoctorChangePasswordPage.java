@@ -11,21 +11,21 @@ import org.openqa.selenium.support.PageFactory;
  */
 public class DoctorChangePasswordPage 
 {
-	//declaration
+	//declaration 
 	@FindBy(xpath="//input[@name='cpass']") private WebElement currentPasswordEdt;
-	
+
 	@FindBy(xpath="//input[@name='npass']") private WebElement newPasswordEdt;
-	
+
 	@FindBy(xpath="//input[@name='cfpass']") private WebElement confirmPasswordEdt;
-	
+
 	@FindBy(xpath="//button[@name='submit']")private WebElement submitBtn;
-	
+
 	//initialization
 	public DoctorChangePasswordPage(WebDriver driver) 
 	{
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	//utilization
 	public WebElement getCurrentPasswordEdt() {
 		return currentPasswordEdt;
@@ -42,5 +42,5 @@ public class DoctorChangePasswordPage
 	public WebElement getSubmitBtn() {
 		return submitBtn;
 	}
-	
+
 }

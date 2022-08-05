@@ -13,21 +13,21 @@ import com.hms.genericUtilities.WebDriverUtility;
  */
 public class EditDoctorDetailsPage extends WebDriverUtility
 {
-//declaration
+	//declaration 
 	@FindBy(xpath="//select[@name='Doctorspecialization']") private WebElement doctorSpecializationDrpDwn;
-	
+
 	@FindBy(xpath="//input[@name='docname']") private WebElement doctorsNameEdt;
-	
+
 	@FindBy(name="clinicaddress") private WebElement doctorClinicAdressEdt;
-	
+
 	@FindBy(name="docfees") private WebElement doctorConsultancyFeesEdt;
-	
+
 	@FindBy(name="doccontact") private WebElement doctorContactNumEdt;
-	
+
 	@FindBy(name="docemail") private WebElement doctorEmailEdt;
-	
+
 	@FindBy(xpath="//button[@name='submit']") private WebElement updateBtn;
-	
+
 	//initialization
 	public EditDoctorDetailsPage(WebDriver driver)
 	{
@@ -62,10 +62,10 @@ public class EditDoctorDetailsPage extends WebDriverUtility
 	public WebElement getUpdateBtn() {
 		return updateBtn;
 	}
-	
+
 	public void selectDoctorSpecialization(String doctorSpecialization)
 	{
-	selectDropDown(doctorSpecializationDrpDwn, doctorSpecialization);	
+		selectDropDown(doctorSpecializationDrpDwn, doctorSpecialization);	
 	}
-	
+
 }
