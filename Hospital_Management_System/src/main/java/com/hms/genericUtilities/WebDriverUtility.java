@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Iterator;
+import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Set;
 
@@ -302,6 +303,11 @@ public class WebDriverUtility {
 	{
 		Select select=new Select(element);
 		select.selectByVisibleText(visible_text);
+		List<WebElement> value = select.getOptions();
+		for(WebElement w:value)
+		{
+			System.out.println(w.getText());
+		}
 	}
 	/**
 	 * it is used to mouse over an element
