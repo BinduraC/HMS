@@ -20,6 +20,7 @@ public class BookAppointmentPage extends WebDriverUtility {
 		PageFactory.initElements(driver, this);
 	}
 	
+	
 	//declaration
 	@FindBy(name = "Doctorspecialization") private WebElement specializationsDrpDwn;
 	
