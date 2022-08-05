@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
  */
 public class AddPatientPage 
 {
-	//declaration 
+	//declaration
 	@FindBy(name="patname") private WebElement patientNameEdt;
 
 	@FindBy(name="patcontact") private WebElement patientContactNum;

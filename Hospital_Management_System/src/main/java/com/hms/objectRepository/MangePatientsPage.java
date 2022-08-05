@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
  */
 public class MangePatientsPage
 {
-	//declaration 
+	//declaration
 	@FindBy(xpath="//h1[@class='mainTitle']") private WebElement managePatientsPgTitle;
 
 	//initialization
