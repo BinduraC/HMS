@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
  */
 public class DoctorAppointmentHistoryPage 
 {
-	//declaration
+	//declaration 
 	@FindBy(xpath="//h1[@class='mainTitle']") private WebElement appointmentHistoryPgTitle;
 
 	//initialization
