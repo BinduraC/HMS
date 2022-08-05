@@ -24,5 +24,4 @@ public class MangePatientsPage
 		return managePatientsPgTitle;
 	}
 
-
 }

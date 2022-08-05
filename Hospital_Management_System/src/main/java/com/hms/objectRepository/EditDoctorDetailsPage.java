@@ -13,7 +13,7 @@ import com.hms.genericUtilities.WebDriverUtility;
  */
 public class EditDoctorDetailsPage extends WebDriverUtility
 {
-	//declaration 
+	//declaration
 	@FindBy(xpath="//select[@name='Doctorspecialization']") private WebElement doctorSpecializationDrpDwn;
 
 	@FindBy(xpath="//input[@name='docname']") private WebElement doctorsNameEdt;
