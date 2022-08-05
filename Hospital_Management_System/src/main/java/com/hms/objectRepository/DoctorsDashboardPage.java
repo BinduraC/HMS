@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
  */
 public class DoctorsDashboardPage
 {
-	//declaration
+	//declaration 
 	@FindBy(xpath="//a[contains(text(),'Update Profile')]") private WebElement updateProfile;
 
 	@FindBy(xpath="//a[contains(text(),'View Appointment History')]") private WebElement viewAppointmentHistory;

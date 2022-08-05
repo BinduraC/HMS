@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
  */
 public class DoctorChangePasswordPage 
 {
-	//declaration
+	//declaration 
 	@FindBy(xpath="//input[@name='cpass']") private WebElement currentPasswordEdt;
 
 	@FindBy(xpath="//input[@name='npass']") private WebElement newPasswordEdt;

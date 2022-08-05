@@ -23,5 +23,4 @@ public class MangePatientsPage
 	public WebElement getManagePatientsPgTitle() {
 		return managePatientsPgTitle;
 	}
-
 }
