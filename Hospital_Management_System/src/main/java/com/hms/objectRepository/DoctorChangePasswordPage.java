@@ -27,20 +27,24 @@ public class DoctorChangePasswordPage
 	}
 
 	//utilization
-	public WebElement getCurrentPasswordEdt() {
-		return currentPasswordEdt;
+	public void currentPassword(String currentPassword) 
+	{
+		currentPasswordEdt.sendKeys(currentPassword);
 	}
 
-	public WebElement getNewPasswordEdt() {
-		return newPasswordEdt;
+	public void newPassword(String newPassword) 
+	{
+		newPasswordEdt.sendKeys(newPassword);
 	}
 
-	public WebElement getConfirmPasswordEdt() {
-		return confirmPasswordEdt;
+	public void confirmPassword(String confirmPassword)
+	{
+		confirmPasswordEdt.sendKeys(confirmPassword);
 	}
 
-	public WebElement getSubmitBtn() {
-		return submitBtn;
+	public void submitBtn() 
+	{
+		submitBtn.click();
 	}
 
 }

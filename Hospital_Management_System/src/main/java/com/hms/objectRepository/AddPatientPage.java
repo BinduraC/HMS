@@ -14,7 +14,7 @@ public class AddPatientPage
 	//declaration
 	@FindBy(name="patname") private WebElement patientNameEdt;
 
-	@FindBy(name="patcontact") private WebElement patientContactNum;
+	@FindBy(name="patcontact") private WebElement patientContactNumEdt;
 
 	@FindBy(xpath="//input[@id='patemail']") private WebElement patientEmailedt;
 
@@ -37,40 +37,48 @@ public class AddPatientPage
 	}
 	//utilization
 
-	public WebElement getPatientNameEdt() {
-		return patientNameEdt;
+	public void enterPatientName(String patientName)
+	{
+		patientNameEdt.sendKeys(patientName);
 	}
 
-	public WebElement getPatientContactNum() {
-		return patientContactNum;
+	public void enterPatientContactNum(String contactNumber) 
+	{
+		patientContactNumEdt.sendKeys(contactNumber);
 	}
 
-	public WebElement getPatientEmailedt() {
-		return patientEmailedt;
+	public void enterPatientEmail(String patientMail) 
+	{
+		patientEmailedt.sendKeys(patientMail);;
 	}
 
-	public WebElement getGenderFemaleRadioBtn() {
-		return genderFemaleRadioBtn;
+	public void genderFemaleRadioBtn()
+	{
+		genderFemaleRadioBtn.click();
 	}
 
-	public WebElement getGenderMaleRadioBtn() {
-		return genderMaleRadioBtn;
+	public void genderMaleRadioBtn() 
+	{
+		genderMaleRadioBtn.click();
 	}
 
-	public WebElement getPatientAdressEdt() {
-		return patientAdressEdt;
+	public void enterPatientAdressEdt(String patientaddress) 
+	{
+		patientAdressEdt.sendKeys(patientaddress);
 	}
 
-	public WebElement getPatientAgeEdt() {
-		return patientAgeEdt;
+	public void enterPatientAgeEdt(String patientAge) 
+	{
+		patientAgeEdt.sendKeys(patientAge);
 	}
 
-	public WebElement getMedicalHistory() {
+	public WebElement medicalHistory() {
 		return medicalHistory;
 	}
 
-	public WebElement getAddBtn() {
-		return addBtn;
+	public void addBtn()
+	{
+		addBtn.click();
 	}
 
 }

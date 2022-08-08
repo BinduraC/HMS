@@ -12,9 +12,9 @@ import org.openqa.selenium.support.PageFactory;
 public class DoctorsDashboardPage
 {
 	//declaration 
-	@FindBy(xpath="//a[contains(text(),'Update Profile')]") private WebElement updateProfile;
+	@FindBy(xpath="//a[contains(text(),'Update Profile')]") private WebElement updateProfileLnk;
 
-	@FindBy(xpath="//a[contains(text(),'View Appointment History')]") private WebElement viewAppointmentHistory;
+	@FindBy(xpath="//a[contains(text(),'View Appointment History')]") private WebElement viewAppointmentHistoryLnk;
 
 	@FindBy(xpath="//span[text()=' Appointment History ']") private WebElement appointmentHistoryLnk;
 
@@ -41,16 +41,23 @@ public class DoctorsDashboardPage
 	}
 
 	//utilization
-	public WebElement getUpdateProfile() {
-		return updateProfile;
+	public void updateProfile() {
+		updateProfileLnk.click();
 	}
 
-	public WebElement getViewAppointmentHistory() {
-		return viewAppointmentHistory;
+	public void viewAppointmentHistory() 
+	{
+		viewAppointmentHistoryLnk.click();
 	}
 
-	public WebElement getAppointmentHistoryLnk() {
-		return appointmentHistoryLnk;
+	public void appointmentHistory() 
+	{
+		appointmentHistoryLnk.click();
+	}
+
+	
+	public WebElement atientsDrpDwn() {
+		return patientsDrpDwn;
 	}
 
 	public WebElement getAddPatientLnk() {
@@ -61,12 +68,13 @@ public class DoctorsDashboardPage
 		return managePatientLnk;
 	}
 
-	public WebElement getSearchLnk() {
-		return searchLnk;
+	public void searchLnk() 
+	{
+		searchLnk.click();
 	}
 
-	public WebElement getDoctorsProfileDrpDwn() {
-		return doctorsProfileDrpDwn;
+	public void doctorsProfileDrpDwn() {
+		doctorsProfileDrpDwn.click();
 	}
 
 	public WebElement getMyProfileLnk() {
