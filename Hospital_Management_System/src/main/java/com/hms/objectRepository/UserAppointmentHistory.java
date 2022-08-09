@@ -17,7 +17,7 @@ public class UserAppointmentHistory {
 	//initialization
 	public UserAppointmentHistory(WebDriver driver)
 	{
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(driver. this);
 	}
 	
 	//declaration
