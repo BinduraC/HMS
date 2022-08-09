@@ -35,32 +35,39 @@ public class EditDoctorDetailsPage extends WebDriverUtility
 	}
 
 	//utilization
-	public WebElement getDoctorSpecializationDrpDwn() {
+	public WebElement getDoctorSpecializationDrpDwn()
+	{
 		return doctorSpecializationDrpDwn;
 	}
 
-	public WebElement getDoctorsNameEdt() {
-		return doctorsNameEdt;
+	public void doctorsName(String doctorName) 
+	{
+		doctorsNameEdt.sendKeys(doctorName);
 	}
 
-	public WebElement getDoctorClinicAdressEdt() {
-		return doctorClinicAdressEdt;
+	public void doctorClinicAdress(String clinicAdress)
+	{
+		doctorClinicAdressEdt.sendKeys(clinicAdress);
 	}
 
-	public WebElement getDoctorConsultancyFeesEdt() {
-		return doctorConsultancyFeesEdt;
+	public void doctorConsultancyFees(String fees) 
+	{
+		doctorConsultancyFeesEdt.sendKeys(fees);
 	}
 
-	public WebElement getDoctorContactNumEdt() {
-		return doctorContactNumEdt;
+	public void doctorContactNum(String ContactNumber) 
+	{
+		doctorContactNumEdt.sendKeys(ContactNumber);
 	}
 
-	public WebElement getDoctorEmailEdt() {
-		return doctorEmailEdt;
+	public void doctorEmail(String doctorMail) 
+	{
+		doctorEmailEdt.sendKeys(doctorMail);
 	}
 
-	public WebElement getUpdateBtn() {
-		return updateBtn;
+	public void update() 
+	{
+		updateBtn.click();
 	}
 
 	public void selectDoctorSpecialization(String doctorSpecialization)
