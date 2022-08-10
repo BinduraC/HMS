@@ -46,7 +46,6 @@ public class UpdatePatientTest extends BaseClass{
 		
 		//fetch doctorSpecialization from Excel file
 		String previousDate = excelUtility.readDataFromExcel("Doctor", 2, 10);
-		System.out.println(previousDate);
 		
 		
 		bookAppointmentPage.getDate().click();

@@ -14,7 +14,11 @@ import com.hms.objectRepository.HMSHomePage;
 import com.hms.objectRepository.LoginPage;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-
+/**
+ * 
+ * @author Bindura
+ *
+ */
 public class BaseClass {
 	
 	public static WebDriver sdriver;
