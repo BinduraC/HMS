@@ -17,7 +17,7 @@ import com.hms.objectRepository.UserDashboardPage;
  */
 public class BookMyAppointment_TC01Test extends BaseClass
 {
-	@Test(enabled = false)
+	@Test
 	public void bookMyAppointment_TC01_Test()
 	{
 		//navigate to application
