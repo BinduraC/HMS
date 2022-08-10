@@ -44,7 +44,9 @@ public class UserDashboardPage {
 		bookAppointmentLink.click();
 	}
 	
-	public void clickSignOut() {
+	public void clickSignOut() 
+	{
+		userDropDown.click();
 		signoutBtn.click();
 	}
 }
