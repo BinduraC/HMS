@@ -92,13 +92,13 @@ public class BaseClass {
 	{
 		String USERNAME = null;
 		try {
-			USERNAME = fLib.getPropertKeyValue("patientusername");
+			USERNAME = fLib.getPropertKeyValue("username");
 		} catch (Throwable e) {
 			e.printStackTrace();
 		}
 		String PASSWORD = null;
 		try {
-			PASSWORD = fLib.getPropertKeyValue("patientpassword");
+			PASSWORD = fLib.getPropertKeyValue("password");
 		} catch (Throwable e) {
 			e.printStackTrace();
 		}
@@ -120,7 +120,7 @@ public class BaseClass {
 	/**
 	 * close the browser
 	 */
-	/*@AfterClass
+	@AfterClass
 	public void closeTheBrowser()
 	{
 		driver.quit();
