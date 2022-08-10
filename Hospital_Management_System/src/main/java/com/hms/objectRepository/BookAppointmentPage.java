@@ -26,11 +26,15 @@ public class BookAppointmentPage extends WebDriverUtility {
 	
 	@FindBy(name = "doctor") private WebElement doctorsDrpDwn;
 	
-	@FindBy(name = "appdate") private WebElement date;
+	@FindBy(name = "appdate") 
+	private WebElement date;
 	
 	@FindBy(name = "apptime") private WebElement time;
 	
 	@FindBy(name = "submit") private WebElement submitBtn;
+	
+	//@FindBy(xpath = "//td[@class='active day']/../td[5]")
+	private WebElement previousDate;
 	
 	//utilization
 	public void selectSpecialization(String spName)
@@ -57,4 +61,9 @@ public class BookAppointmentPage extends WebDriverUtility {
 	{
 		submitBtn.click();
 	}
+
+	public WebElement getPreviousDate() {
+		return previousDate;
+	}
+	
 }

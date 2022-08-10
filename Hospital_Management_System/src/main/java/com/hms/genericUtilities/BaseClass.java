@@ -14,7 +14,11 @@ import com.hms.objectRepository.HMSHomePage;
 import com.hms.objectRepository.LoginPage;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-
+/**
+ * 
+ * @author Bindura
+ *
+ */
 public class BaseClass {
 	
 	public static WebDriver sdriver;
@@ -28,11 +32,11 @@ public class BaseClass {
 	/**
 	 * connecting to database
 	 */
-	@BeforeSuite
+	/*@BeforeSuite
 	public void dbConfig()
 	{
 		dLib.connectToDB();
-	}
+	}*/
 	/**
 	 * launching the browser
 	 * @throws Throwable
@@ -83,30 +87,30 @@ public class BaseClass {
 	/**
 	 * login to application
 	 */
-	@BeforeMethod
+	/*@BeforeMethod
 	public void loginToAppln()
 	{
 		String USERNAME = null;
 		try {
-			USERNAME = fLib.getPropertKeyValue("username");
+			USERNAME = fLib.getPropertKeyValue("patientusername");
 		} catch (Throwable e) {
 			e.printStackTrace();
 		}
 		String PASSWORD = null;
 		try {
-			PASSWORD = fLib.getPropertKeyValue("password");
+			PASSWORD = fLib.getPropertKeyValue("patientpassword");
 		} catch (Throwable e) {
 			e.printStackTrace();
 		}
 
 		LoginPage lpage=new LoginPage(driver);
-		//lpage.loginToAppli(USERNAME, PASSWORD);
+		lpage.loginToAppli(USERNAME, PASSWORD);
 		System.out.println("Login successful");
 	}
 	/**
 	 * logout from application
 	 */
-	@AfterMethod
+	/*@AfterMethod
 	public void logoutFromAppln()
 	{
 		HMSHomePage hpage=new HMSHomePage(driver);
@@ -116,7 +120,7 @@ public class BaseClass {
 	/**
 	 * close the browser
 	 */
-	@AfterClass
+	/*@AfterClass
 	public void closeTheBrowser()
 	{
 		driver.quit();
@@ -125,10 +129,10 @@ public class BaseClass {
 	/**
 	 * close database configuration
 	 */
-	@AfterSuite
+	/*@AfterSuite
 	public void closeDBconfig()
 	{
 		dLib.closeDB();
-	}
+	}*/
 
 }
