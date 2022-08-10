@@ -15,7 +15,7 @@ import com.hms.objectRepository.UserDashboardPage;
  * @author dinuh
  *
  */
-public class BookMyAppointment_Test extends BaseClass
+public class BookMyAppointment_TC01Test extends BaseClass
 {
 	@Test(enabled = false)
 	public void bookMyAppointment_TC01_Test()
