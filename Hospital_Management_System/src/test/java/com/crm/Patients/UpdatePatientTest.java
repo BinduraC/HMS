@@ -1,6 +1,5 @@
 package com.crm.Patients;
 
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import com.hms.genericUtilities.BaseClass;
@@ -14,7 +13,7 @@ public class UpdatePatientTest extends BaseClass{
 
 	
 	@Test
-	public void updatePatient() {
+	public void updatePatient_05Test() {
 		
 		ExcelUtility excelUtility = new ExcelUtility();
 		
@@ -22,9 +21,12 @@ public class UpdatePatientTest extends BaseClass{
 		HMSHomePage homepage = new HMSHomePage(driver);
 		homepage.getPatientslogin();
 		
+		String USERNAME = fLib.getPropertKeyValue("patientusername");
+		String PASSWORD = fLib.getPropertKeyValue("patientpassword");
+	
 		//open patient login page
 		LoginPage loginpage = new LoginPage(driver);
-		loginpage.loginToApplication();
+		loginpage.loginToApplication(USERNAME,PASSWORD);
 		
 		//navigate to Book my appointment(click on Book Appointment Link
 		UserDashboardPage userdashboardpage = new UserDashboardPage(driver);
