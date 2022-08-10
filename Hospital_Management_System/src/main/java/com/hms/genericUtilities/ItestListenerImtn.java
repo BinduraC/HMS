@@ -4,15 +4,45 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ItestListenerImtn implements ITestListener{
 
-	ExtentReports report;
+	public void onTestStart(ITestResult result) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void onTestSuccess(ITestResult result) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void onTestFailure(ITestResult result) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void onTestSkipped(ITestResult result) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void onStart(ITestContext context) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void onFinish(ITestContext context) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	/*ExtentReports report;
 	ExtentTest test;
 
 	public void onTestStart(ITestResult result) {
@@ -27,7 +57,7 @@ public class ItestListenerImtn implements ITestListener{
 	/**
 	 * To take screenshot of failed test scripts
 	 */
-	public void onTestFailure(ITestResult result) {
+	/*public void onTestFailure(ITestResult result) {
 		test.log(Status.FAIL,result.getMethod().getMethodName());
 		test.log(Status.FAIL, result.getThrowable());
 
@@ -67,6 +97,6 @@ public class ItestListenerImtn implements ITestListener{
 	public void onFinish(ITestContext context) {
 		// TODO Auto-generated method stub
 		report.flush();
-	}
+	}*/
 
 }
