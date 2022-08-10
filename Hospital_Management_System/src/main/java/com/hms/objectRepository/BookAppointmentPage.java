@@ -26,8 +26,11 @@ public class BookAppointmentPage extends WebDriverUtility {
 	
 	@FindBy(name = "doctor") private WebElement doctorsDrpDwn;
 	
-	@FindBy(name = "appdate") 
-	private WebElement date;
+	@FindBy(xpath="//select[@id='fees']") private WebElement consultancyFees;
+	
+	@FindBy(name = "appdate") private WebElement date;
+	
+	@FindBy(xpath="//td[@class='day' and text()='10']") private WebElement todayDate;
 	
 	@FindBy(name = "apptime") private WebElement time;
 	
@@ -46,12 +49,22 @@ public class BookAppointmentPage extends WebDriverUtility {
 	{
 		selectDropDownByVtext(doctorsDrpDwn, docName);
 	}
+	
+
+	public WebElement getConsultancyFees() {
+		return consultancyFees;
+	}
 
 	public WebElement getDate() 
 	{
 		return date;
 	}
 	
+	
+	public WebElement getTodayDate() {
+		return todayDate;
+	}
+
 	public WebElement getTime()
 	{
 		return time;
