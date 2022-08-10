@@ -13,6 +13,7 @@ import com.hms.genericUtilities.FileUtility;
  *
  */
 public class LoginPage{
+	
 	//initialization
 	public LoginPage(WebDriver driver)
 	{
@@ -59,24 +60,10 @@ public class LoginPage{
 	{
 		createAccount.click();
 	}
-	public void loginToApplication()
+	public void loginToApplication(String username, String password)
 	{
-		String USERNAME = null;
-		FileUtility fLib = new FileUtility();
-		try {
-			USERNAME = fLib.getPropertKeyValue("patientusername");
-		} catch (Throwable e) {
-			e.printStackTrace();
-		}
-		String PASSWORD = null;
-		try {
-			PASSWORD = fLib.getPropertKeyValue("patientpassword");
-		} catch (Throwable e) {
-			e.printStackTrace();
-		}
-		
-		usernameEdt.sendKeys(USERNAME);
-		passwordEdt.sendKeys(PASSWORD);
+		usernameEdt.sendKeys(username);
+		passwordEdt.sendKeys(password);
 		clickLoginBtn();
 	}
 } 
