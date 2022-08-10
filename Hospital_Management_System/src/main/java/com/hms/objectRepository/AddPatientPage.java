@@ -72,8 +72,9 @@ public class AddPatientPage
 		patientAgeEdt.sendKeys(patientAge);
 	}
 
-	public WebElement medicalHistory() {
-		return medicalHistory;
+	public void medicalHistoryEdt(String medHistory) 
+	{
+		medicalHistory.sendKeys(medHistory);
 	}
 
 	public void addBtn()

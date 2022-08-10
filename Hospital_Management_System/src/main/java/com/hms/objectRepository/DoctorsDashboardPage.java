@@ -4,12 +4,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import com.hms.genericUtilities.WebDriverUtility;
 /**
  * 
  * @author dinuh
  *
  */
-public class DoctorsDashboardPage
+public class DoctorsDashboardPage extends WebDriverUtility
 {
 	//declaration 
 	@FindBy(xpath="//a[contains(text(),'Update Profile')]") private WebElement updateProfileLnk;
@@ -55,19 +57,6 @@ public class DoctorsDashboardPage
 		appointmentHistoryLnk.click();
 	}
 
-	
-	public WebElement atientsDrpDwn() {
-		return patientsDrpDwn;
-	}
-
-	public WebElement getAddPatientLnk() {
-		return addPatientLnk;
-	}
-
-	public WebElement getManagePatientLnk() {
-		return managePatientLnk;
-	}
-
 	public void searchLnk() 
 	{
 		searchLnk.click();
@@ -89,17 +78,11 @@ public class DoctorsDashboardPage
 		return logoutLnk;
 	}
 
-	public void addPatient()
+	public void selectPatientsDrpDwn(String patDrpDwnOption)
 	{
-		patientsDrpDwn.click();
-		addPatientLnk.click();
+		selectDropDownByVtext(patientsDrpDwn, patDrpDwnOption);
 	}
 
-	public void managePatient()
-	{
-		patientsDrpDwn.click();
-		managePatientLnk.click();
-	}
 
 	public void logoutDoctor()
 	{
