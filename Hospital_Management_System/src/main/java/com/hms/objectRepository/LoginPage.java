@@ -13,6 +13,7 @@ import com.hms.genericUtilities.FileUtility;
  *
  */
 public class LoginPage{
+	
 	//initialization
 	public LoginPage(WebDriver driver)
 	{

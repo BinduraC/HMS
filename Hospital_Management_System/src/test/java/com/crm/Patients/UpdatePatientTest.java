@@ -13,7 +13,7 @@ public class UpdatePatientTest extends BaseClass{
 
 	
 	@Test
-	public void updatePatient_05Test() {
+	public void updatePatient05Test() {
 		
 		ExcelUtility excelUtility = new ExcelUtility();
 		
