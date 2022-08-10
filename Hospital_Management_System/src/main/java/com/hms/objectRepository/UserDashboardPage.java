@@ -31,7 +31,7 @@ public class UserDashboardPage {
 	private WebElement userDropDown;
 	
 	@FindBy(xpath="//a[contains(text(),'Log Out')]")
-	private WebElement signoutBtn;
+	private WebElement logoutBtn;
     
 	//utilization
 	public void clickUpdateProfile() {
@@ -44,7 +44,9 @@ public class UserDashboardPage {
 		bookAppointmentLink.click();
 	}
 	
-	public void clickSignOut() {
-		signoutBtn.click();
+	public void clicklogOut() 
+	{
+		userDropDown.click();
+		logoutBtn.click();
 	}
 }
