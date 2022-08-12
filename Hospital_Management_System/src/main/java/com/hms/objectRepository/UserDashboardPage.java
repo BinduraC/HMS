@@ -24,6 +24,8 @@ public class UserDashboardPage {
 	@FindBy(xpath="//h2[text()='My Appointments']/..//a[@href='appointment-history.php']")
 	private WebElement viewAppointmentHistoryLink;
 	
+	@FindBy(xpath = "//span[.=' Appointment History ']") private WebElement appointmentHistoryBar;
+	
 	@FindBy(xpath="//a[contains(text(),'Book Appointment')]")
 	private WebElement bookAppointmentLink;
 	
@@ -51,6 +53,17 @@ public class UserDashboardPage {
 		bookAppointmentLink.click();
 	}
 	
+
+	public void clickAppointmentHistoryBar()
+	{
+		appointmentHistoryBar.click();
+	}
+	
+	public void clickSignOut() 
+	{
+		userDropDown.click();
+		logoutBtn.click();
+	}
 	public void clicklogOut() 
 	{
 		userDropDown.click();

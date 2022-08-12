@@ -18,15 +18,38 @@ public class UpdatePatientPage {
 	}
 
 	//declaration
-	@FindBy(xpath = "//textarea[@name='address']")private WebElement addressChange;
+	
+	@FindBy(name = "fname") private WebElement usernameEdt;
+	
+	@FindBy(xpath = "//textarea[@name='address']") private WebElement addressChange;
+	
+	@FindBy(name = "city") private WebElement cityChange;
+	
+	@FindBy(name = "gender") private WebElement genderDrpDwn;
+	
 	@FindBy(xpath = "//button[@class='btn btn-o btn-primary']")private WebElement clickUpdateBtn;
 
 	//utilization
-	public void enterPatientAddress(String address) {
-		addressChange.sendKeys("address");
+	public void enterUsername(String patientName)
+	{
+		usernameEdt.sendKeys(patientName);
 	}
 	
-	public void clickUpdate() {
+	public void enterPatientAddress(String address) {
+		addressChange.sendKeys(address);
+	}
+	
+	public void enterCity(String cityName)
+	{
+		cityChange.sendKeys(cityName);
+	}
+	
+	public WebElement selectGenderDrpDwn()
+	{
+		return genderDrpDwn;
+	}
+	public void clickUpdate()
+	{
 		clickUpdateBtn.click();
 	}
 }

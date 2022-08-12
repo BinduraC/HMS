@@ -12,7 +12,8 @@ import com.hms.genericUtilities.WebDriverUtility;
  *
  */
 
-public class BookAppointmentPage extends WebDriverUtility {
+public class BookAppointmentPage extends WebDriverUtility
+{
 
 	//initialization
 	public BookAppointmentPage(WebDriver driver)
@@ -35,9 +36,6 @@ public class BookAppointmentPage extends WebDriverUtility {
 	@FindBy(name = "apptime") private WebElement time;
 	
 	@FindBy(name = "submit") private WebElement submitBtn;
-	
-	//@FindBy(xpath = "//td[@class='active day']/../td[5]")
-	private WebElement previousDate;
 	
 	//utilization
 	public void selectSpecialization(String spName)
@@ -73,10 +71,6 @@ public class BookAppointmentPage extends WebDriverUtility {
 	public void submit()
 	{
 		submitBtn.click();
-	}
-
-	public WebElement getPreviousDate() {
-		return previousDate;
 	}
 	
 }

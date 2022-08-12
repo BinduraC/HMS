@@ -18,6 +18,8 @@ public class DoctorsDashboardPage extends WebDriverUtility
 
 	@FindBy(xpath="//a[contains(text(),'View Appointment History')]") private WebElement viewAppointmentHistoryLnk;
 
+	@FindBy(xpath="//span[text()=' Dashboard ']") private WebElement dasboardLnk;
+	
 	@FindBy(xpath="//span[text()=' Appointment History ']") private WebElement appointmentHistoryLnk;
 
 	@FindBy(xpath="//i[@class='icon-arrow']") private WebElement patientsDrpDwn;
@@ -51,6 +53,11 @@ public class DoctorsDashboardPage extends WebDriverUtility
 	{
 		viewAppointmentHistoryLnk.click();
 	}
+	
+	public void dashboardLnk() 
+	{
+		dasboardLnk.click();
+	}
 
 	public void appointmentHistory() 
 	{
@@ -60,6 +67,16 @@ public class DoctorsDashboardPage extends WebDriverUtility
 	public void searchLnk() 
 	{
 		searchLnk.click();
+	}
+	public void addPatient()
+	{
+		patientsDrpDwn.click();
+		addPatientLnk.click();
+	}
+	public void managePatient()
+	{
+		patientsDrpDwn.click();
+		managePatientLnk.click();
 	}
 
 	public void doctorsProfileDrpDwn() {
@@ -78,10 +95,7 @@ public class DoctorsDashboardPage extends WebDriverUtility
 		return logoutLnk;
 	}
 
-	public void selectPatientsDrpDwn(String patDrpDwnOption)
-	{
-		selectDropDownByVtext(patientsDrpDwn, patDrpDwnOption);
-	}
+	
 
 
 	public void logoutDoctor()

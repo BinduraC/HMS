@@ -25,6 +25,8 @@ public class HMSHomePage {
 	
 	@FindBy(xpath = "//a[@href='hms/admin']") private WebElement adminlogin;
 	
+	@FindBy(xpath = "(//a[@href='contact.php'])[1]") private WebElement contactLink;
+	
 	//utilization
 	
 	public void getPatientslogin()
@@ -40,5 +42,10 @@ public class HMSHomePage {
 	public void getAdminlogin()
 	{
 		adminlogin.click();
+	}
+	
+	public void getContactLink()
+	{
+		contactLink.click();
 	}
 }

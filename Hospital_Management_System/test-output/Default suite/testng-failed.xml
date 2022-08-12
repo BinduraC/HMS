@@ -3,12 +3,26 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.Patients.BookMyAppointment_TC05_Test">
+<<<<<<< HEAD
+      <class name="com.crm.Patients.AdminAppointmentTC_02Test">
+=======
+      <class name="com.hms.doctors.AddPatientAndVerifyInManagePatientTest">
+>>>>>>> branch 'hmsbranch' of https://github.com/BinduraC/HMS.git
         <methods>
+          <include name="closeTheBrowser"/>
           <include name="launchTheBrowser"/>
-          <include name="bookMyAppointment_TC05_Test"/>
+<<<<<<< HEAD
+          <include name="loginToAppln"/>
+          <include name="adminAppointmentTC_02Test"/>
+=======
+          <include name="registerPatientAndVerifyAppointmentInDoctorModuleTest"/>
+>>>>>>> branch 'hmsbranch' of https://github.com/BinduraC/HMS.git
         </methods>
-      </class> <!-- com.crm.Patients.BookMyAppointment_TC05_Test -->
+<<<<<<< HEAD
+      </class> <!-- com.crm.Patients.AdminAppointmentTC_02Test -->
+=======
+      </class> <!-- com.hms.doctors.AddPatientAndVerifyInManagePatientTest -->
+>>>>>>> branch 'hmsbranch' of https://github.com/BinduraC/HMS.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
