@@ -60,5 +60,6 @@ public class AdminAppointmentTC_02Test extends BaseClass{
 
 		//sign out as patient
 		userDashboardPage.clicklogOut();
+		
 	}
 }

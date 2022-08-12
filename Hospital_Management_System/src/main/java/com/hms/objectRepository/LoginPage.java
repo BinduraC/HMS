@@ -25,30 +25,28 @@ public class LoginPage{
 	@FindBy(xpath = "//input[@name='password']") 
 	private WebElement passwordEdt;
 	
-	@FindBy(xpath = "//a[@href='forgot-password.php']") 
-	private WebElement forgotpassword;
+	@FindBy(xpath = "//a[@href='forgot-password.php']") private WebElement forgotpassword;
 	
-	@FindBy(name = "submit") 
-	private WebElement loginBtn;
+	@FindBy(name = "submit") private WebElement loginBtn;
 	
 	@FindBy(xpath = "//a[@href='registration.php']") private WebElement createAccount;
 	
 	//utilization
+	public void enterUsername(String userName)
+	{
+		usernameEdt.sendKeys(userName);
+	}
 	
+	public void enterPassword(String passWord)
+	{
+		passwordEdt.sendKeys(passWord);
+	}
 	
 	public void getForgotPassword()
 	{
 		forgotpassword.click();
 	}
 	
-	public WebElement getUsernameEdt() {
-		return usernameEdt;
-	}
-
-	public WebElement getPasswordEdt() {
-		return passwordEdt;
-	}
-
 	public void clickLoginBtn()
 	{
 		loginBtn.click();
