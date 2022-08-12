@@ -19,10 +19,10 @@ public class LoginPage{
 	}
 	
 	//declaration
-	@FindBy(name = "username") 
+	@FindBy(xpath = "//input[@name='username']")
 	private WebElement usernameEdt;
 	
-	@FindBy(xpath="//input[@name='password']")
+	@FindBy(xpath = "//input[@name='password']") 
 	private WebElement passwordEdt;
 	
 	@FindBy(xpath = "//a[@href='forgot-password.php']") 

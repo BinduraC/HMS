@@ -12,10 +12,10 @@ import com.hms.objectRepository.UserDashboardPage;
  * @author Bindura
  *
  */
-public class BookMyAppointment_TC05_Test extends BaseClass
-{
+public class BookMyAppointment_TC07_Test extends BaseClass{
+
 	@Test
-	public void bookMyAppointment_TC05_Test() {
+	public void bookMyAppointment_TC07_Test() {
 
 		//click on patients link
 		HMSHomePage homepage = new HMSHomePage(driver);
@@ -47,15 +47,9 @@ public class BookMyAppointment_TC05_Test extends BaseClass
 		bookAppointmentPage.selectDoctor(doctor);
 
 		bookAppointmentPage.getDate().click();
-		
-		
-		//fetch appointment date from Excel file
-		//String previousDate = eLib.readDataFromExcel("Doctor", 2, 10); 
-		//System.out.println("previousDate is "+previousDate);
-
 
 		bookAppointmentPage.getDate().click();
-		bookAppointmentPage.getDate().sendKeys("2022-08-30");
+		bookAppointmentPage.getDate().sendKeys("2022-08-10");
 
 		//fetch doctorSpecialization from Excel file
 		String time = eLib.readDataFromExcel("Doctor", 2, 11);
@@ -67,8 +61,12 @@ public class BookMyAppointment_TC05_Test extends BaseClass
 		//click OK alert popup
 		wLib.switchToAlertPopUpAndAccept(driver,"Your appointment successfully booked");
 
+		//click on Appointment History
+		userdashboardpage.clickAppointmentHistory();
+
 		//logout as patient(click user dropdown then click on logout)
 		UserDashboardPage userDashboardPage=new UserDashboardPage(driver);
 		userDashboardPage.clicklogOut();
+
 	}
 }

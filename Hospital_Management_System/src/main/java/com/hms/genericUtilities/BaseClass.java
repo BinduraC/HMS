@@ -120,12 +120,12 @@ public class BaseClass {
 	/**
 	 * close the browser
 	 */
-	@AfterClass
+	/*@AfterClass
 	public void closeTheBrowser()
 	{
 		driver.quit();
 		System.out.println("Browser successfully closed");
-	}
+	}*/
 	/**
 	 * close database configuration
 	 */

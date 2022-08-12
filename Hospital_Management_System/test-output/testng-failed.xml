@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.Patients.BookMyAppointment_TC05_Test">
+      <class name="com.hms.doctors.AddPatientAndVerifyInManagePatientTest">
         <methods>
+          <include name="closeTheBrowser"/>
           <include name="launchTheBrowser"/>
-          <include name="bookMyAppointment_TC05_Test"/>
+          <include name="registerPatientAndVerifyAppointmentInDoctorModuleTest"/>
         </methods>
-      </class> <!-- com.crm.Patients.BookMyAppointment_TC05_Test -->
+      </class> <!-- com.hms.doctors.AddPatientAndVerifyInManagePatientTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
