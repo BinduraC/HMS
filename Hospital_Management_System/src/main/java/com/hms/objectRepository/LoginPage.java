@@ -10,7 +10,8 @@ import org.openqa.selenium.support.PageFactory;
  * @author Indrajit
  *
  */
-public class LoginPage {
+public class LoginPage{
+	
 	//initialization
 	public LoginPage(WebDriver driver)
 	{
@@ -18,9 +19,11 @@ public class LoginPage {
 	}
 	
 	//declaration
-	@FindBy(xpath = "//input[@placeholder='Username']") private WebElement username;
+	@FindBy(xpath = "//input[@name='username']")
+	private WebElement usernameEdt;
 	
-	@FindBy(xpath = "//input[@placeholder='Password']") private WebElement password;
+	@FindBy(xpath = "//input[@name='password']") 
+	private WebElement passwordEdt;
 	
 	@FindBy(xpath = "//a[@href='forgot-password.php']") private WebElement forgotpassword;
 	
@@ -31,12 +34,12 @@ public class LoginPage {
 	//utilization
 	public void enterUsername(String userName)
 	{
-		username.sendKeys(userName);
+		usernameEdt.sendKeys(userName);
 	}
 	
 	public void enterPassword(String passWord)
 	{
-		password.sendKeys(passWord);
+		passwordEdt.sendKeys(passWord);
 	}
 	
 	public void getForgotPassword()
@@ -52,5 +55,11 @@ public class LoginPage {
 	public void createAccountLink()
 	{
 		createAccount.click();
+	}
+	public void loginToApplication(String username, String password)
+	{
+		usernameEdt.sendKeys(username);
+		passwordEdt.sendKeys(password);
+		clickLoginBtn();
 	}
 } 

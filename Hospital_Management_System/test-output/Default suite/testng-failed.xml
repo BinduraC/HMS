@@ -5,7 +5,6 @@
     <classes>
       <class name="com.crm.Patients.AdminAppointmentTC_02Test">
         <methods>
-          <include name="closeTheBrowser"/>
           <include name="launchTheBrowser"/>
           <include name="loginToAppln"/>
           <include name="adminAppointmentTC_02Test"/>

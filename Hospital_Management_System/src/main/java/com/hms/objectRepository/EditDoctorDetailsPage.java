@@ -72,7 +72,7 @@ public class EditDoctorDetailsPage extends WebDriverUtility
 
 	public void selectDoctorSpecialization(String doctorSpecialization)
 	{
-		selectDropDown(doctorSpecializationDrpDwn, doctorSpecialization);	
+		selectDropDownByVtext(doctorSpecializationDrpDwn, doctorSpecialization);
 	}
 
 }
