@@ -1,22 +1,22 @@
 package com.crm.Patients;
 
+import java.util.Date;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
 
 import com.hms.genericUtilities.BaseClass;
+import com.hms.objectRepository.AdminDashboardPage;
 import com.hms.objectRepository.BookAppointmentPage;
 import com.hms.objectRepository.HMSHomePage;
 import com.hms.objectRepository.LoginPage;
 import com.hms.objectRepository.UserDashboardPage;
-/**
- * 
- * @author Bindura
- *
- */
-public class BookMyAppointment_TC05_Test extends BaseClass
-{
-	@Test
-	public void bookMyAppointment_TC05_Test() {
 
+public class BookMyAppointment_TC08_Test extends BaseClass{
+
+	@Test
+	public void bookMyAppointment_TC08_Test() {
 		//click on patients link
 		HMSHomePage homepage = new HMSHomePage(driver);
 		homepage.getPatientslogin();
@@ -33,7 +33,7 @@ public class BookMyAppointment_TC05_Test extends BaseClass
 		userdashboardpage.clickBookAppointment();
 
 		//fetch doctorSpecialization from Excel file
-		String doctorSpecialization = eLib.readDataFromExcel("Doctor", 7, 5);
+		String doctorSpecialization = eLib.readDataFromExcel("Doctor", 6, 5);
 
 		//fetch doctor from Excel file
 		String doctor = eLib.readDataFromExcel("Doctor", 3, 4);
@@ -46,20 +46,9 @@ public class BookMyAppointment_TC05_Test extends BaseClass
 		//fetch doctor from excel
 		bookAppointmentPage.selectDoctor(doctor);
 
+		//click on date 
 		bookAppointmentPage.getDate().click();
-		
-		
-		//fetch appointment date from Excel file
-		//String previousDate = eLib.readDataFromExcel("Doctor", 2, 10); 
-		//System.out.println("previousDate is "+previousDate);
-
-
-		bookAppointmentPage.getDate().click();
-		bookAppointmentPage.getDate().sendKeys("2022-08-30");
-
-		//fetch doctorSpecialization from Excel file
-		String time = eLib.readDataFromExcel("Doctor", 2, 11);
-		bookAppointmentPage.getTime().sendKeys(time);;
+		bookAppointmentPage.getDate().sendKeys("2022-08-10");
 
 		//click on submit button
 		bookAppointmentPage.submit();
@@ -70,5 +59,23 @@ public class BookMyAppointment_TC05_Test extends BaseClass
 		//logout as patient(click user dropdown then click on logout)
 		UserDashboardPage userDashboardPage=new UserDashboardPage(driver);
 		userDashboardPage.clicklogOut();
+
+		//click on admin link
+		homepage.getAdminlogin();
+
+
+		//enter username and password for Admin
+		String adminUsername = fLib.getPropertKeyValue("adminusername");
+		String adminPassword = fLib.getPropertKeyValue("adminpassword");
+
+		//open admin login page
+		////LoginPage loginForAdmin = new LoginPage(driver);
+		//String adminUsername1 = driver.findElement(By.xpath("//input[@name='username']")).getText();
+		loginpage.loginToApplication(adminUsername,adminPassword);
+
+
+		wLib.waitForPageToLoad(driver);
+		AdminDashboardPage adminpage = new AdminDashboardPage(driver);
+		adminpage.adminlogout();
 	}
 }
