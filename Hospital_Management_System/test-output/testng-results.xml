@@ -3,12 +3,21 @@
   <reporter-output>
   </reporter-output>
 <<<<<<< HEAD
+  <suite started-at="2022-08-12T11:14:03 IST" name="Default suite" finished-at="2022-08-12T11:14:12 IST" duration-ms="8841">
+=======
+<<<<<<< HEAD
   <suite started-at="2022-08-12T11:39:12 IST" name="Default suite" finished-at="2022-08-12T11:39:29 IST" duration-ms="16534">
 =======
   <suite started-at="2022-08-12T10:00:57 IST" name="Default suite" finished-at="2022-08-12T10:01:25 IST" duration-ms="28469">
 >>>>>>> branch 'hmsbranch' of https://github.com/BinduraC/HMS.git
+>>>>>>> branch 'hmsbranch' of https://github.com/BinduraC/HMS.git
     <groups>
     </groups>
+<<<<<<< HEAD
+    <test started-at="2022-08-12T11:14:03 IST" name="Default test" finished-at="2022-08-12T11:14:12 IST" duration-ms="8841">
+      <class name="com.crm.Patients.AdminAppointmentTC_02Test">
+        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:com.crm.Patients.AdminAppointmentTC_02Test@6253c26]" started-at="2022-08-12T11:14:03 IST" name="launchTheBrowser" finished-at="2022-08-12T11:14:08 IST" duration-ms="4882" status="PASS">
+=======
 <<<<<<< HEAD
     <test started-at="2022-08-12T11:39:12 IST" name="Default test" finished-at="2022-08-12T11:39:29 IST" duration-ms="16534">
       <class name="com.crm.Patients.AdminAppointmentTC_02Test">
@@ -18,9 +27,13 @@
       <class name="com.hms.doctors.AddPatientAndVerifyInManagePatientTest">
         <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:com.hms.doctors.AddPatientAndVerifyInManagePatientTest@576d5deb]" started-at="2022-08-12T10:00:57 IST" name="launchTheBrowser" finished-at="2022-08-12T10:01:09 IST" duration-ms="11968" status="PASS">
 >>>>>>> branch 'hmsbranch' of https://github.com/BinduraC/HMS.git
+>>>>>>> branch 'hmsbranch' of https://github.com/BinduraC/HMS.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchTheBrowser -->
+<<<<<<< HEAD
+        <test-method signature="adminAppointmentTC_02Test()[pri:0, instance:com.crm.Patients.AdminAppointmentTC_02Test@6253c26]" started-at="2022-08-12T11:14:08 IST" name="adminAppointmentTC_02Test" finished-at="2022-08-12T11:14:12 IST" duration-ms="3917" status="PASS">
+=======
 <<<<<<< HEAD
         <test-method is-config="true" signature="loginToAppln()[pri:0, instance:com.crm.Patients.AdminAppointmentTC_02Test@3e11f9e9]" started-at="2022-08-12T11:39:18 IST" name="loginToAppln" finished-at="2022-08-12T11:39:29 IST" duration-ms="10161" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
@@ -104,8 +117,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 =======
         <test-method signature="registerPatientAndVerifyAppointmentInDoctorModuleTest()[pri:0, instance:com.hms.doctors.AddPatientAndVerifyInManagePatientTest@576d5deb]" started-at="2022-08-12T10:01:09 IST" name="registerPatientAndVerifyAppointmentInDoctorModuleTest" finished-at="2022-08-12T10:01:24 IST" duration-ms="15694" status="PASS">
 >>>>>>> branch 'hmsbranch' of https://github.com/BinduraC/HMS.git
+>>>>>>> branch 'hmsbranch' of https://github.com/BinduraC/HMS.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- adminAppointmentTC_02Test -->
+      </class> <!-- com.crm.Patients.AdminAppointmentTC_02Test -->
+=======
 <<<<<<< HEAD
         </test-method> <!-- loginToAppln -->
         <test-method signature="adminAppointmentTC_02Test()[pri:0, instance:com.crm.Patients.AdminAppointmentTC_02Test@3e11f9e9]" started-at="2022-08-12T11:39:29 IST" name="adminAppointmentTC_02Test" finished-at="2022-08-12T11:39:29 IST" duration-ms="0" status="SKIP">
@@ -198,6 +216,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
       </class> <!-- com.hms.doctors.AddPatientAndVerifyInManagePatientTest -->
+>>>>>>> branch 'hmsbranch' of https://github.com/BinduraC/HMS.git
 >>>>>>> branch 'hmsbranch' of https://github.com/BinduraC/HMS.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

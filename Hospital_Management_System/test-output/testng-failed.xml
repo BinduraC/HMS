@@ -6,22 +6,34 @@
 <<<<<<< HEAD
       <class name="com.crm.Patients.AdminAppointmentTC_02Test">
 =======
+<<<<<<< HEAD
+      <class name="com.crm.Patients.AdminAppointmentTC_02Test">
+=======
       <class name="com.hms.doctors.AddPatientAndVerifyInManagePatientTest">
+>>>>>>> branch 'hmsbranch' of https://github.com/BinduraC/HMS.git
 >>>>>>> branch 'hmsbranch' of https://github.com/BinduraC/HMS.git
         <methods>
           <include name="closeTheBrowser"/>
           <include name="launchTheBrowser"/>
+<<<<<<< HEAD
+          <include name="adminAppointmentTC_02Test"/>
+=======
 <<<<<<< HEAD
           <include name="loginToAppln"/>
           <include name="adminAppointmentTC_02Test"/>
 =======
           <include name="registerPatientAndVerifyAppointmentInDoctorModuleTest"/>
 >>>>>>> branch 'hmsbranch' of https://github.com/BinduraC/HMS.git
+>>>>>>> branch 'hmsbranch' of https://github.com/BinduraC/HMS.git
         </methods>
 <<<<<<< HEAD
       </class> <!-- com.crm.Patients.AdminAppointmentTC_02Test -->
 =======
+<<<<<<< HEAD
+      </class> <!-- com.crm.Patients.AdminAppointmentTC_02Test -->
+=======
       </class> <!-- com.hms.doctors.AddPatientAndVerifyInManagePatientTest -->
+>>>>>>> branch 'hmsbranch' of https://github.com/BinduraC/HMS.git
 >>>>>>> branch 'hmsbranch' of https://github.com/BinduraC/HMS.git
     </classes>
   </test> <!-- Default test(failed) -->
