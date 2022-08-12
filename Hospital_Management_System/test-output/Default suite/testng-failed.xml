@@ -3,17 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.Patients.BookMyAppointmentTC_03Test">
+      <class name="com.crm.Patients.AdminAppointmentTC_02Test">
         <methods>
           <include name="closeTheBrowser"/>
           <include name="launchTheBrowser"/>
-          <include name="dbConfig"/>
-          <include name="logoutFromAppln"/>
           <include name="loginToAppln"/>
-          <include name="closeDBconfig"/>
-          <include name="bookMyAppointmentTC_03Test"/>
+          <include name="adminAppointmentTC_02Test"/>
         </methods>
-      </class> <!-- com.crm.Patients.BookMyAppointmentTC_03Test -->
+      </class> <!-- com.crm.Patients.AdminAppointmentTC_02Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

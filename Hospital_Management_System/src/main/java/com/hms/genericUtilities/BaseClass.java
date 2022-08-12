@@ -4,17 +4,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-
-import com.hms.objectRepository.HMSHomePage;
 import com.hms.objectRepository.LoginPage;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-
+/**
+ * 
+ * @author Bindura
+ *
+ */
 public class BaseClass {
 	
 	public static WebDriver sdriver;
@@ -28,11 +27,11 @@ public class BaseClass {
 	/**
 	 * connecting to database
 	 */
-	@BeforeSuite
+	/*@BeforeSuite
 	public void dbConfig()
 	{
 		dLib.connectToDB();
-	}
+	}*/
 	/**
 	 * launching the browser
 	 * @throws Throwable
@@ -100,13 +99,15 @@ public class BaseClass {
 		}
 
 		LoginPage lpage=new LoginPage(driver);
-		//lpage.loginToAppli(USERNAME, PASSWORD);
+		lpage.enterUsername(USERNAME);
+		lpage.enterPassword(PASSWORD);
+		lpage.clickLoginBtn();
 		System.out.println("Login successful");
 	}
 	/**
 	 * logout from application
 	 */
-	@AfterMethod
+	/*@AfterMethod
 	public void logoutFromAppln()
 	{
 		HMSHomePage hpage=new HMSHomePage(driver);
@@ -125,10 +126,10 @@ public class BaseClass {
 	/**
 	 * close database configuration
 	 */
-	@AfterSuite
+	/*@AfterSuite
 	public void closeDBconfig()
 	{
 		dLib.closeDB();
-	}
+	}*/
 
 }

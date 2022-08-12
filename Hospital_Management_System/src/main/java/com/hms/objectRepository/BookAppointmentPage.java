@@ -58,4 +58,5 @@ public class BookAppointmentPage extends WebDriverUtility
 	{
 		submitBtn.click();
 	}
+	
 }

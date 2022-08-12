@@ -24,6 +24,8 @@ public class UserDashboardPage {
 	@FindBy(xpath="//a[contains(text(),'View Appointment History')]")
 	private WebElement viewAppointmentHistoryLink;
 	
+	@FindBy(xpath = "//span[.=' Appointment History ']") private WebElement appointmentHistoryBar;
+	
 	@FindBy(xpath="//a[contains(text(),'Book Appointment')]")
 	private WebElement bookAppointmentLink;
 	
@@ -42,6 +44,11 @@ public class UserDashboardPage {
 	}
 	public void clickBookAppointment() {
 		bookAppointmentLink.click();
+	}
+	
+	public void clickAppointmentHistoryBar()
+	{
+		appointmentHistoryBar.click();
 	}
 	
 	public void clickSignOut() 

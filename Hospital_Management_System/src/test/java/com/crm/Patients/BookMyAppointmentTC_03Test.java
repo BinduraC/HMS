@@ -46,6 +46,9 @@ public void bookMyAppointmentTC_03Test()
 	bookAppointmentPage.getTime().sendKeys("6:08 PM");
 	bookAppointmentPage.submit();
 	
+	//click ok on alert popup
+	wLib.switchToAlertPopUpAndAccept(driver, "Your appointment successfully booked");
+	
 	//sign out as patient
 	userDashboardPage.clickSignOut();
 }
