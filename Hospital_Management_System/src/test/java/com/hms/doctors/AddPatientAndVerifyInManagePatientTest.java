@@ -22,7 +22,7 @@ public void registerPatientAndVerifyAppointmentInDoctorModuleTest()
 	String USERNAME=fLib.getPropertKeyValue("doctorusername");
 	String PASSWORD=fLib.getPropertKeyValue("doctorpassword");
 	
-	String patientDrpDwnOptions=eLib.readDataFromExcel("Doctor", 2, 12);
+	
 	String patientName=eLib.readDataFromExcel("Patient", 4, 4);
 	String patientCntNum=eLib.readDataFromExcel("Patient", 4, 7);
 	String patientEmail=eLib.readDataFromExcel("Patient", 4, 5);
